@@ -1,0 +1,3 @@
+class unicorn::params {
+    
+}
