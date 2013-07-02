@@ -25,6 +25,6 @@ class unicorn (
     }
 
     Package['unicorn'] -> File['unicorn_init'] -> Service['unicorn'] 
-    File['unicorn.conf'] ~> Service['unicorn'] 
+    File['unicorn_init'] ~> Service['unicorn'] 
         
 }
