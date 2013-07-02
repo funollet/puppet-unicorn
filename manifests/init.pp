@@ -19,9 +19,7 @@ class unicorn (
     }
 
     service { "unicorn":
-        enable    => true,
         ensure    => running,
-        hasstatus => true,
     }
 
     Package['unicorn'] -> File['unicorn_init'] -> Service['unicorn'] 
