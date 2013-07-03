@@ -19,7 +19,7 @@ class unicorn (
     }
 
     service { "unicorn":
-        ensure    => running,
+        ensure    => stopped,
     }
 
     Package['unicorn'] -> File['unicorn_init'] -> Service['unicorn'] 
